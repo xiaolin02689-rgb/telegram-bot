@@ -1,0 +1,28 @@
+name: 运行 Telegram 机器人
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/5 * * * *'    # 每5分钟自动重启，永不睡
+
+jobs:
+  bot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 安装 Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install python-telegram-bot --pre
+
+      - name: 启动机器人
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: |
+          python bot.py
