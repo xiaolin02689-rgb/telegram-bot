@@ -1,0 +1,32 @@
+{
+  "1": {
+    "title_type": "photo",
+    "title_content": "AgACAgUAAxkBAAIEf2kyTxMuLeqFn9ZYju-_VjfmVX2DAAILC2sbcSuYVchzXM6S8m2EAQADAgADeQADNgQ",
+    "buttons": [
+      {
+        "id": 0,
+        "name": "🌏东南亚新闻",
+        "subbuttons": [],
+        "url": "https://t.me/dny88com"
+      },
+      {
+        "id": 1,
+        "name": "🔞成人影片",
+        "subbuttons": [],
+        "url": "https://t.me/madouav88888"
+      },
+      {
+        "id": 2,
+        "name": "六合彩",
+        "subbuttons": [
+          {
+            "id": 0,
+            "name": "香港六合彩",
+            "url": "https://t.me/tiyu678999"
+          }
+        ]
+      }
+    ],
+    "forward_caption": "东南亚大事记"
+  }
+}
