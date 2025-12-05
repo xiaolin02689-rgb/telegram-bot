@@ -476,4 +476,5 @@ app.add_handler(CallbackQueryHandler(button))
 app.add_handler(InlineQueryHandler(inlinequery))
 
 logger.info("【2025终极完美版 + 完整按钮增删改查】已启动！完美运行！")
+
 app.run_polling(drop_pending_updates=True)
